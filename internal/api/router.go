@@ -291,6 +291,7 @@ func newGinRouter(ctx context.Context, client discovery.SvcDiscoveryRegistry, cf
 		conversationGroup.POST("/get_pinned_conversation_ids", c.GetPinnedConversationIDs)
 		conversationGroup.POST("/delete_conversations", c.DeleteConversations)
 		conversationGroup.POST("/update_conversations_by_user", c.UpdateConversationsByUser)
+		conversationGroup.POST("/get_conversation_read_cursors", c.GetConversationReadCursors)
 	}
 
 	{
